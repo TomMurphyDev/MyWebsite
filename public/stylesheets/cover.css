@@ -1,0 +1,17 @@
+.ipcs {
+    color: white;
+    text-shadow: #000 0px 0px 50px;
+    -webkit-font-smoothing: antialiased;
+    background-image: url("/assets/images/Blackweb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top center;
+    padding-top:10em;
+    padding-bottom:10em;
+}
+@media screen and (max-width:500px) {
+  .ipcs{
+    padding-top:3em;
+    padding-bottom:3em;
+  }
+}

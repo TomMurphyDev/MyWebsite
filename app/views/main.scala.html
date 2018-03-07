@@ -1,0 +1,70 @@
+@*
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+@(title: String)(content: Html)
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned(" stylesheets
+    /bootstrap.min.css")">
+    <link rel="stylesheet" href="@routes.Assets.versioned(" stylesheets
+    /cover.css")">
+    <link href="/assets/fonts/open-iconic-master/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">TomMurphyDev</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="jumbotron ipcs jumbotron-fluid text-center">
+    <div class="container">
+        <img class="img-fluid" src="assets/images/Me.png" alt="Thomas Murphy Headshot">
+        <h1 class="display-1">Thomas Murphy</h1>
+        <h1 class="display-4">Building a future for myself</h1>
+        <button type="button" class="btn btn-primary btn-lg"><h1 class="display-4"><span class="oi oi-person"></span>
+        </h1></button>
+        <button type="button" class="btn btn-secondary btn-lg"><h1 class="display-4"><span class="oi oi-person"></span>
+        </h1></button>
+        <button type="button" class="btn btn-secondary btn-lg"><h1 class="display-4"><span class="oi oi-person"></span>
+        </h1></button>
+    </div>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+@* And here's where we render the `Html` object containing
+* the page content. *@
+@content
+<script src="@routes.Assets.versioned(" javascripts
+/jquery-3.3.1.min.js")"></script>
+            <script src="@routes.Assets.versioned("javascripts/popper.min.js")"></script>
+<script src="@routes.Assets.versioned(" javascripts
+/bootstrap.min.js")"></script>
+        </body>
+    </html>
