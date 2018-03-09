@@ -14,6 +14,8 @@
     <meta name="author" content="">
     <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
     <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/cover.css")">
+    <style>
+  </style>
     <link href="/assets/fonts/open-iconic-master/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -41,10 +43,10 @@
     </div>
 </nav>
 <div class="jumbotron ipcs jumbotron-fluid text-center">
-    <div class="container">
+    <div class="container-fluid text-center">
         <img class="img-fluid" src="assets/images/Me.png" alt="Thomas Murphy Headshot">
-        <h1 class="display-1">Thomas Murphy</h1>
-        <h1 class="display-4">Building a future for myself</h1>
+        <h1>Thomas Murphy</h1>
+        <h1>Building a future for myself</h1>
         <button type="button" class="btn btn-primary btn-lg"><h1 class="display-4"><span class="oi oi-person"></span>
         </h1></button>
         <button type="button" class="btn btn-secondary btn-lg"><h1 class="display-4"><span class="oi oi-envelope-closed"></span>
@@ -52,6 +54,52 @@
         <button type="button" class="btn btn-secondary btn-lg"><h1 class="display-4"><span class="oi oi-project"></span>
         </h1></button>
     </div>
+</div>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+    <h1 class="margin">What Am I?</h1>
+    <p>Accomplished service industry professional who after returning to full time education in 2013
+        graduated in 2017 with a Bachelor’s degree in Computing achieving a 2:1 grade.</p>
+</div>
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">
+    <h1 class="margin">Skills</h1><br>
+    <div class="row">
+        <div class="col-sm-3">
+            <h3>Programming Languages:</h3>
+            <p>Java, C#, C++. Applied to build android applications
+                (Java) and Web Applications (Play Framework!), C# building .net web
+                applications and windows phone mobile applications. Developing functional
+                libraries in C++.
+            </p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Databases:</h3>
+            <p>Programming in SQL/PLSQL, Relational, Object-Relational Database
+                design and development. Experience using the Entity framework (code first),
+                Hibernate and Ebean ORM.
+                <br/></p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Cloud Development:</h3>
+            <p> Developing and deploying applications in Azure such as
+                applications reliant on Azure Media Services, mobile services and those
+                requiring off table storage in BLOB’s.
+                <br/>
+            </p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Networking:</h3>
+            <p>Switch and router programming setting up DMZ’s, Areas etc.</p>
+                <br/>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-2 text-center">
+    <h1 class="margin">Projects</h1>
+    <p>
+</div>
 </div>
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -63,4 +111,4 @@
 <script src="@routes.Assets.versioned("javascripts/popper.min.js")"></script>
 <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")"></script>
         </body>
-    </html>
+   </html>
